@@ -67,30 +67,28 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 - **Método**: `GET`
 - **URL**: `/api/students`
 - **Respuesta**: Lista de estudiantes en formato JSON.
+![Metodo Get](/IMG/Metodo%20Get%20All.png)
 
 ### 2. Obtener un estudiante por ID
 - **Método**: `GET`
 - **URL**: `/api/students/{id}`
 - **Ejemplo**: `/api/students/1`
+- **Respuetsa**:
+![Metodo Get](/IMG/Metodo%20Get%20Id.png)
 
 ### 3. Obtener un estudiante por Email
 - **Método**: `GET`
 - **URL**: `/api/students/email/{email}`
 - **Ejemplo**: `/api/students/email/ejemplo@correo.com`
+![Metodo Get](/IMG/Metodo%20Get%20email.png)
 
 ### 4. Crear un nuevo estudiante
 - **Método**: `POST`
 - **URL**: `/api/students`
 - **Body (JSON)**:
-    ```json
-    {
-      "firstName": "Juan",
-      "lastName": "Pérez",
-      "email": "juan.perez@example.com",
-      "birthDate": "2000-01-15",
-      "phone": "1234567890"
-    }
-    ```
+-**Respuesta** 
+![Metodo Get](/IMG/Metodo%20POST.png)
+
 
 ### 5. Actualizar un estudiante
 - **Método**: `PUT`
@@ -106,11 +104,16 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
       "phone": "0987654321"
     }
     ```
+-**Respuesta** 
+![Metodo Get](/IMG/Metodo%20put.png)
 
 ### 6. Eliminar un estudiante
 - **Método**: `DELETE`
 - **URL**: `/api/students/{id}`
 - **Ejemplo**: `/api/students/1`
+-**Respuesta** 
+![Metodo Get](/IMG/Metodo%20delete.png)
+
 
 ## 🧪 Ejecutar Pruebas
 
@@ -119,6 +122,7 @@ Para ejecutar las pruebas unitarias y de integración, usa el siguiente comando:
 ```powershell
 .\mvnw.cmd test
 ```
+![Test](/IMG/TEST.png)
 
 ## 📂 Estructura del Proyecto
 

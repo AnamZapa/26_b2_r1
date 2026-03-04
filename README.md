@@ -1,5 +1,7 @@
 # Proyecto - Sistema de Gestión de Estudiantes
 
+Nombre Estudiante: Ana Maria Zapata Pinillos
+
 Este es un proyecto backend desarrollado con **Java 21** y **Spring Boot** para la gestión de estudiantes. Incluye una API RESTful que permite crear, leer, actualizar y eliminar (CRUD) registros de estudiantes, persistiendo los datos en una base de datos **PostgreSQL**.
 
 ## 🚀 Tecnologías Utilizadas
@@ -34,12 +36,6 @@ La configuración de la base de datos se maneja a través de variables de entorn
     DB_USERNAME=tu_usuario
     DB_PASSWORD=tu_contraseña
     ```
-## Evidencia de la conexión con Prisma
-![Metodo Get](/IMG/PRISMA%20Luego%20de%20la%20eliminación.png)
-![Metodo Get](/IMG/PRISMA%201.png)
-
-## Conexión a Prisma
-![Metodo Get](/IMG/Conexión%20BD.png)
 
 > **Nota:** El archivo `.env` está excluido del control de versiones para mantener tus credenciales seguras.
 
@@ -47,7 +43,7 @@ La configuración de la base de datos se maneja a través de variables de entorn
 
 1.  **Clonar el repositorio**:
     ```powershell
-    git clone <url-del-repositorio>
+    git clone https://github.com/AnamZapa/26_b2_r1.git
     cd pi
     ```
 
@@ -73,6 +69,7 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 - **Método**: `GET`
 - **URL**: `/api/students`
 - **Respuesta**: Lista de estudiantes en formato JSON.
+
 ![Metodo Get](/IMG/Metodo%20Get%20All.png)
 
 ### 2. Obtener un estudiante por ID
@@ -80,18 +77,21 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 - **URL**: `/api/students/{id}`
 - **Ejemplo**: `/api/students/1`
 - **Respuetsa**:
+
 ![Metodo Get](/IMG/Metodo%20Get%20Id.png)
 
 ### 3. Obtener un estudiante por Email
 - **Método**: `GET`
 - **URL**: `/api/students/email/{email}`
 - **Ejemplo**: `/api/students/email/ejemplo@correo.com`
+
 ![Metodo Get](/IMG/Metodo%20Get%20email.png)
 
 ### 4. Crear un nuevo estudiante
 - **Método**: `POST`
 - **URL**: `/api/students`
 - **Body (JSON)**:
+
 -**Respuesta** 
 ![Metodo Get](/IMG/Metodo%20POST.png)
 
@@ -111,6 +111,7 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
     }
     ```
 -**Respuesta** 
+
 ![Metodo Get](/IMG/Metodo%20put.png)
 
 ### 6. Eliminar un estudiante
@@ -118,6 +119,7 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 - **URL**: `/api/students/{id}`
 - **Ejemplo**: `/api/students/1`
 -**Respuesta** 
+
 ![Metodo Get](/IMG/Metodo%20delete.png)
 
 
@@ -141,3 +143,5 @@ src/main/java/com/cesde/pi
 ├── dto           # Objetos de Transferencia de Datos
 └── exception     # Manejo de Excepciones Globales
 ```
+Enlace de la instancia de base de datos en: jdbc:postgresql://db.prisma.io:5432/postgres?sslmode=require
+![Test](/IMG/env.png)

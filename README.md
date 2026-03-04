@@ -68,7 +68,8 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 ### 1. Obtener todos los estudiantes
 - **Método**: `GET`
 - **URL**: `/api/students`
-- **Respuesta**: Lista de estudiantes en formato JSON.
+- **Respuesta**: 
+Lista de estudiantes en formato JSON.
 
 ![Metodo Get](/IMG/Metodo%20Get%20All.png)
 
@@ -84,6 +85,7 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 - **Método**: `GET`
 - **URL**: `/api/students/email/{email}`
 - **Ejemplo**: `/api/students/email/ejemplo@correo.com`
+- **Respuesta**:
 
 ![Metodo Get](/IMG/Metodo%20Get%20email.png)
 
@@ -91,8 +93,8 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 - **Método**: `POST`
 - **URL**: `/api/students`
 - **Body (JSON)**:
+- **Respuesta**
 
--**Respuesta** 
 ![Metodo Get](/IMG/Metodo%20POST.png)
 
 
@@ -110,7 +112,7 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
       "phone": "0987654321"
     }
     ```
--**Respuesta** 
+- **Respuesta** 
 
 ![Metodo Get](/IMG/Metodo%20put.png)
 
@@ -118,7 +120,7 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 - **Método**: `DELETE`
 - **URL**: `/api/students/{id}`
 - **Ejemplo**: `/api/students/1`
--**Respuesta** 
+- **Respuesta** 
 
 ![Metodo Get](/IMG/Metodo%20delete.png)
 

@@ -34,6 +34,12 @@ La configuración de la base de datos se maneja a través de variables de entorn
     DB_USERNAME=tu_usuario
     DB_PASSWORD=tu_contraseña
     ```
+## Evidencia de la conexión con Prisma
+![Metodo Get](/IMG/PRISMA%20Luego%20de%20la%20eliminación.png)
+![Metodo Get](/IMG/PRISMA%201.png)
+
+## Conexión a Prisma
+![Metodo Get](/IMG/Conexión%20BD.png)
 
 > **Nota:** El archivo `.env` está excluido del control de versiones para mantener tus credenciales seguras.
 
